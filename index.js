@@ -18,7 +18,15 @@ submitButton.addEventListener("click", function (event) {
     let rating = document.querySelector(".rating");
     rating.textContent = selectedNumber;
   } else {
-    alert("please select a rating.");
+    if (!document.querySelector(".error")) {
+      const err = document.createElement("div");
+      const submitDiv = document.querySelector(".submit");
+      err.classList.add("error");
+      err.textContent = "Please select a rating";
+
+      submitDiv.appendChild(err);
+    }
+
     event.preventDefault();
   }
 });
