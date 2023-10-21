@@ -1,0 +1,99 @@
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    background-color: hsl(213, 19%, 18%);
+    max-width: 26rem;
+    margin: 4rem auto;
+    padding: 3rem;
+    border-radius: 2rem;
+    color: hsl(217, 12%, 63%);
+}
+
+.confirmation-container{
+    max-width: 22rem;
+}
+
+.circle{
+    text-align: center;
+    width: 5%;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: hsla(217, 12%, 63%,20%);
+    margin-right: 2rem;
+}
+
+h1{
+    color: #fff;
+}
+
+p{
+    font-size: 16px;
+}
+
+p.circle{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 3rem;
+    padding: 5px;
+    color: hsl(25, 97%, 53%);
+}
+
+.active-number{
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+}
+
+.numbers{
+    display: flex;
+}
+
+.submit button{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 5px;
+    border-radius: 3rem;
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.numbers .circle{
+    cursor: pointer;
+}
+
+.numbers .circle:active{
+    background-color: hsl(25, 97%, 53%);
+    color:#fff;
+}
+
+button[type = "submit"]:active{
+    color: hsl(25, 97%, 53%);
+    background-color: #fff;
+
+}
+
+
+@media screen and (max-width: 375px) {
+    .circle{
+        width: 7%;
+        padding: 1rem;
+        margin-right: 1rem;
+    }
+}
