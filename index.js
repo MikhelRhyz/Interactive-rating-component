@@ -11,9 +11,14 @@ circles.forEach((circle) =>
   })
 );
 
-submitButton.addEventListener("click", function(){
-  redirectLink.href = `confirmation.html?number=${selectedNumber}`;
+submitButton.addEventListener("click", function (event) {
+  if (selectedNumber > 0) {
+    redirectLink.href = `confirmation.html?number=${selectedNumber}`;
 
-  let rating = document.querySelector(".rating");
-  rating.textContent = selectedNumber;
+    let rating = document.querySelector(".rating");
+    rating.textContent = selectedNumber;
+  } else {
+    alert("please select a rating.");
+    event.preventDefault();
+  }
 });
