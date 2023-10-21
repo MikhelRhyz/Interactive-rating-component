@@ -1,5 +1,5 @@
 let circles = document.querySelectorAll(".circle");
-let selectedNumber = null;
+let selectedNumber = 0;
 const submitButton = document.querySelector('button[type = "submit"]');
 
 circles.forEach((circle) =>
